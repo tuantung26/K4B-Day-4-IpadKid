@@ -1,2 +1,5 @@
 version,author,changed_artifact,artifact_version,prompt_hash,tools_hash,reason,hypothesis,metric_name,metric_before,metric_after,run_file
-
+v0,IpadKid,baseline,v0+p27467914bc4d+td4848549884e,27467914bc4d,d4848549884e,baseline,Đo hành vi gốc trước khi cải thiện,case_accuracy,,0.70,runs/v0_B_base_openrouter_20260915T184621977523.json
+v1,IpadKid,system_prompt.md,v1+pe85ea9d3cb9d+td4848549884e,e85ea9d3cb9d,d4848549884e,prompt_tuning,Cải thiện quy tắc hỏi làm rõ và ranh giới xác nhận,case_accuracy,0.70,0.6667,runs/v1_B_base_openai_20260915T204722114892.json
+v2,IpadKid,tools.yaml,v2+pe85ea9d3cb9d+ta44eb627ccbb,e85ea9d3cb9d,a44eb627ccbb,tool_description_improvement,Cải thiện mô tả các tool trong tools.yaml để giảm nhầm lẫn routing,case_accuracy,0.6667,0.7333,runs/v2_B_base_openai_20260915T205036318540.json
+v3,IpadKid,tools.yaml,v3+pe85ea9d3cb9d+ta44eb627ccbb,e85ea9d3cb9d,a44eb627ccbb,v3_evaluation,Kiểm tra độ ổn định và đánh giá toàn diện sau khi tinh chỉnh,case_accuracy,0.7333,0.70,runs/v3_B_base_openai_20260915T205249160275.json

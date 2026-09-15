@@ -22,19 +22,44 @@
 
 ## Nhận xét chung
 
-- Kết quả và bằng chứng:
-- Thay đổi hiệu quả nhất:
-- Giới hạn còn lại:
-- Cách phân công và tích hợp:
+- Kết quả và bằng chứng: Ban đầu (v0) baseline đạt 70% case_accuracy (21/30). Sau quá trình tinh chỉnh, v2 đạt đỉnh 73.33% (22/30) nhờ cải thiện mô tả tools (xem log trong bảng B1 file REPORT.md). Đến v3, hệ thống ổn định ở mức 70% sau khi sửa các lỗi liên quan đến routing và boundary.
+- Thay đổi hiệu quả nhất: Chỉnh sửa `tools.yaml` (ở v2) bằng cách làm rõ điều kiện gọi `lookup_user` và `inspect_device`, giúp agent giảm đáng kể lỗi chọn sai tool (wrong_tool). Cập nhật `system_prompt.md` (v1) cũng giúp ngăn chặn lỗi tạo ticket bừa bãi.
+- Giới hạn còn lại: Agent thi thoảng vẫn mắc lỗi `wrong_boundary` ở các kịch bản multi-turn dài nếu người dùng thay đổi ý định giữa chừng, do agent bị mất ngữ cảnh (lost in middle).
+- Cách phân công và tích hợp: Tùng phụ trách chạy test tự động sinh log. Khôi điều chỉnh prompt. Hiệp làm UI. Triển xây dựng các case test độc lập để đối chiếu. Cả team push và test trên cùng 1 branch `starter_v0`.
 
 ## INDIVIDUAL
 
 Sao chép mục này cho từng thành viên.
 
-### Họ và tên — MSSV
+### Ngô Tuấn Tùng — 2A202602826
+
+- Phần việc và file/commit/PR: Team lead, Chạy 3 version và ghi logs, viết Report, adversarial cases `runs/v0_B_base_openrouter_20260915T184621977523.json`, `runs/v1_B_base_openai_20260915T204722114892.json`, `runs/v2_B_base_openai_20260915T205036318540.json`, `runs/v3_B_base_openai_20260915T205249160275.json`, file đã commit: TEAM.md, REPORT.md, version_log.csv.
+- Quyết định, khó khăn và cách xử lý:không có
+- Điều đã học: Chạy test, so sánh kết quả và so sánh các version. Các lỗi trong từng version và cách sửa.
+- AI/công cụ đã dùng và cách kiểm tra: Auto agent, tool yaml, vps .
+- Thời điểm đã tự nộp URL repo chung trên VLearn:
+
+### Phùng Đình Triển — 2A202602837
 
 - Phần việc và file/commit/PR:
 - Quyết định, khó khăn và cách xử lý:
 - Điều đã học:
 - AI/công cụ đã dùng và cách kiểm tra:
 - Thời điểm đã tự nộp URL repo chung trên VLearn:
+
+### Cao Đức Hiệp — 2A202602550
+
+- Phần việc và file/commit/PR:
+- Quyết định, khó khăn và cách xử lý:
+- Điều đã học:
+- AI/công cụ đã dùng và cách kiểm tra:
+- Thời điểm đã tự nộp URL repo chung trên VLearn:
+
+### Phạm Đình Bảo Khôi — 2A202602434
+
+- Phần việc và file/commit/PR:
+- Quyết định, khó khăn và cách xử lý:
+- Điều đã học:
+- AI/công cụ đã dùng và cách kiểm tra:
+- Thời điểm đã tự nộp URL repo chung trên VLearn:
+
