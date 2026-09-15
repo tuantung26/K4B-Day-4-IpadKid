@@ -37,7 +37,7 @@ Sao chép mục này cho từng thành viên.
 - Quyết định, khó khăn và cách xử lý: không có
 - Điều đã học: Chạy test, so sánh kết quả và so sánh các version. Các lỗi trong từng version và cách sửa.
 - AI/công cụ đã dùng và cách kiểm tra: Auto agent, tool yaml, vps .
-- Thời điểm đã tự nộp URL repo chung trên VLearn:
+- Thời điểm đã tự nộp URL repo chung trên VLearn: 00:15, 16/09/2026.
 
 ### Phùng Đình Triển — 2A202602837
 
