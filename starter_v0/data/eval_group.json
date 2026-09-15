@@ -94,16 +94,70 @@
       "metadata": {"skill": "multiturn_correction_parallel_search", "difficulty": "hard", "what_it_tests": "Asset ID được sửa ở lượt 2 phải được mang sang lượt 3, kết hợp đúng 2 tool khác nhau."}
     },
     {
-      "id": "MG05_cancel_then_policy_question",
-      "phase": "B", "suite": "group",
+      "id": "MG06_policy_context_followup",
+      "phase": "B",
+      "suite": "group",
       "turns": [
-        {"role": "user", "content": "Tạo ticket lỗi Wi-Fi LT-240 mức low."},
-        {"role": "user", "content": "Thôi dừng lại, không tạo ticket nữa."},
-        {"role": "user", "content": "Cho mình hỏi chính sách xử lý sự cố Wi-Fi thì tra ở đâu."}
+        {
+          "role": "user",
+          "content": "Cho mình hỏi chính sách công ty về việc sử dụng công cụ bên ngoài."
+        },
+        {
+          "role": "user",
+          "content": "Cụ thể là dữ liệu thiết bị nội bộ có được gửi ra ngoài không?"
+        }
       ],
       "failure_type": "wrong_tool",
-      "expect": {"tool_calls": [{"name": "policy", "args": {"policy_area": "it_support"}}]},
-      "metadata": {"skill": "multiturn_cancel_then_new_intent", "difficulty": "hard", "what_it_tests": "Sau khi hủy yêu cầu tạo ticket, ý định mới (hỏi chính sách) phải được xử lý độc lập."}
-    }
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "policy",
+            "args": {
+              "policy_area": "external_tools"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "multiturn_policy_context",
+        "difficulty": "hard",
+        "what_it_tests": "Agent phải hiểu lượt 2 đang tiếp tục câu hỏi về chính sách công cụ bên ngoài từ lượt 1, và vẫn route đến tool policy với đúng policy_area."
+      }
+    },
+    {
+      "id": "MG07_device_search_correction",
+      "phase": "B",
+      "suite": "group",
+      "turns": [
+        {
+          "role": "user",
+          "content": "Tìm thông tin công khai trên web về Dell Latitude 5430."
+        },
+        {
+          "role": "user",
+          "content": "À mình nói nhầm, là Dell Latitude 5440."
+        },
+        {
+          "role": "user",
+          "content": "Đúng rồi, tìm specs của máy đó giúp mình."
+        }
+      ],
+      "failure_type": "wrong_arg_value",
+      "expect": {
+        "tool_calls": [
+          {
+            "name": "search_device_info",
+            "args": {
+              "query": "Dell Latitude 5440 specifications"
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "skill": "multiturn_device_correction",
+        "difficulty": "hard",
+        "what_it_tests": "Agent phải cập nhật thông tin thiết bị khi người dùng sửa lại ở lượt 2 và sử dụng giá trị mới Dell Latitude 5440 ở lượt cuối, không tiếp tục dùng Dell Latitude 5430."
+      }
+    }   
   ]
 }
