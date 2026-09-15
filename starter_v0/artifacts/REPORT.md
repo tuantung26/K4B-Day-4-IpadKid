@@ -50,8 +50,8 @@ total_cases`, và tool result error đã được review thủ công.
 
 | Version | Prompt/tool change | Hypothesis | Metric | Before | After | Run file |
 |---|---|---|---|---:|---:|---|
-| v0 | baseline |  |  |  |  |  |
-| v1 |  |  |  |  |  |  |
+| v0 | baseline (chưa sửa gì) | Đo hành vi gốc | case_accuracy | — | **0.70** (21/30) | `runs/v0_B_base_openrouter_20260915T184621977523.json` |
+| v1 |  |  |  | 0.70 |  |  |
 | v2 |  |  |  |  |  |  |
 | v3 |  |  |  |  |  |  |
 
@@ -59,7 +59,15 @@ total_cases`, và tool result error đã được review thủ công.
 
 | Case ID | Failure type | Actual calls | What failed | Fix |
 |---|---|---|---|---|
-|  |  |  |  |  |
+| H04_user_routing | wrong_tool | lookup_user không được gọi | Gọi sai tool khi tra cứu nhân viên | Mô tả rõ hơn khi nào dùng `lookup_user` trong tools.yaml |
+| H10_missing_asset | missing_info | inspect_device gọi thiếu asset_id | Không hỏi lại khi thiếu asset_id | Thêm rule prompt: dùng `clarify` khi thiếu asset_id |
+| H11_missing_employee | missing_info | lookup_user gọi thiếu employee_id | Không hỏi lại khi thiếu employee_id | Tương tự H10 — thêm rule hỏi lại |
+| H12_confirm_before_ticket | wrong_boundary | create_ticket gọi ngay không xác nhận | Tạo ticket mà không xác nhận | Rule: `create_ticket` chỉ gọi sau `clarify` với `response_type=yes_no` |
+| H13_parallel_status_and_device | wrong_tool | Chỉ gọi 1 tool thay vì 2 song song | Không nhận ra cần gọi song song | Cải thiện description tool, thêm ví dụ parallel trong prompt |
+| M05_ticket_confirmation | wrong_boundary | create_ticket không qua bước confirm | Tạo ticket không qua xác nhận | Cùng fix với H12 |
+| H17_triage_with_three_sources | wrong_tool | Gọi sai tool khi cần tổng hợp | Sai tool khi cần nhiều nguồn | Prompt hướng dẫn cách triage nhiều tool |
+| H19_ambiguous_environment | missing_info | check_service_status thiếu environment | Không hỏi khi môi trường không rõ | Thêm rule hỏi lại khi thiếu `environment` |
+| M09_confirmation_invalidated | wrong_boundary | create_ticket dùng confirm cũ | Không xác nhận lại sau khi nội dung thay đổi | Confirm phải gắn với nội dung cụ thể ở lượt hiện tại |
 
 ## B3. Team eval cases
 
