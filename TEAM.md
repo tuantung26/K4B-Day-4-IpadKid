@@ -15,10 +15,10 @@
 
 | Họ và tên | MSSV | GitHub | Vai trò và công việc | File/commit/PR |
 |---|---|---|---|---|
-|Ngô Tuấn Tùng | 2A202602826 | tuantung26 | | |
-|Phùng Đình Triển | 2A202602837 | TrienPhung | | |
-|Cao Đức Hiệp | 2A202602550 | Hipscarer03 | | |
-|Phạm Đình Bảo Khôi | 2A202602434 | Palm-Pham | | |
+|Ngô Tuấn Tùng | 2A202602826 | tuantung26 | Team lead, Chạy 3 version và ghi logs, viết Report, adversarial cases | |
+|Phùng Đình Triển | 2A202602837 | TrienPhung | Viết 10 case | |
+|Cao Đức Hiệp | 2A202602550 | Hipscarer03 | Nâng cấp chat UI | |
+|Phạm Đình Bảo Khôi | 2A202602434 | Palm-Pham | Sửa System Prompt và Sửa Tool yaml cải thiện qua các version | |
 
 ## Nhận xét chung
 
