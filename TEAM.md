@@ -34,7 +34,7 @@ Sao chép mục này cho từng thành viên.
 ### Ngô Tuấn Tùng — 2A202602826
 
 - Phần việc và file/commit/PR: Team lead, Chạy 3 version và ghi logs, viết Report, adversarial cases `runs/v0_B_base_openrouter_20260915T184621977523.json`, `runs/v1_B_base_openai_20260915T204722114892.json`, `runs/v2_B_base_openai_20260915T205036318540.json`, `runs/v3_B_base_openai_20260915T205249160275.json`, file đã commit: TEAM.md, REPORT.md, version_log.csv.
-- Quyết định, khó khăn và cách xử lý:không có
+- Quyết định, khó khăn và cách xử lý: không có
 - Điều đã học: Chạy test, so sánh kết quả và so sánh các version. Các lỗi trong từng version và cách sửa.
 - AI/công cụ đã dùng và cách kiểm tra: Auto agent, tool yaml, vps .
 - Thời điểm đã tự nộp URL repo chung trên VLearn:
