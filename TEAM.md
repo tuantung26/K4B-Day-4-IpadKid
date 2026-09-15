@@ -59,7 +59,7 @@ Transcript hoặc tóm tắt cuộc hội thoại để kiểm tra lại
 - Quyết định, khó khăn và cách xử lý: Chọn giao diện đơn giản, dễ sử dụng; kiểm tra và điều chỉnh hiển thị tin nhắn, trạng thái phản hồi.
 - Điều đã học: Biết cách xây dựng UI chat và kết nối giao diện với luồng xử lý của chatbot.
 - AI/công cụ đã dùng và cách kiểm tra: Streamlit, VS Code và AI hỗ trợ; chạy ứng dụng, gửi tin nhắn thử và kiểm tra kết quả hiển thị.
-- Thời điểm đã tự nộp URL repo chung trên VLearn: 16/09/2026, .
+- Thời điểm đã tự nộp URL repo chung trên VLearn: 16/09/2026, 01:15 .
 
 ### Phạm Đình Bảo Khôi — 2A202602434
 
