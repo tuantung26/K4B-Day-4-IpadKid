@@ -57,9 +57,9 @@ Sao chép mục này cho từng thành viên.
 
 ### Phạm Đình Bảo Khôi — 2A202602434
 
-- Phần việc và file/commit/PR:
-- Quyết định, khó khăn và cách xử lý:
-- Điều đã học:
-- AI/công cụ đã dùng và cách kiểm tra:
-- Thời điểm đã tự nộp URL repo chung trên VLearn:
+- Phần việc và file/commit/PR: cải thiện system_prompt.md và tools.yaml cho trợ lý IT Service Desk bằng cách bổ sung quy tắc sử dụng công cụ, taxonomy cho intent/action, cơ chế xác nhận, xử lý lỗi và các ràng buộc đầu vào. Hai file đã được cập nhật trực tiếp; đã tạo commit.
+- Quyết định, khó khăn và cách xử lý: chưa biết cách đọc repo, đọc xong vẫn thấy mơ hồ, chưa hiểu repo muốn làm gì và chia việc cho thành viên nhóm như nào; các đầu việc có ảnh hưởng đến nhau ko, hay làm độc lập được. Để chạy được 30 câu hỏi tốn nhiều token, phải thay nhiều providers. 
+- Điều đã học: ô tả tool cần nêu rõ khi nào nên dùng, khi nào không nên dùng và cách xử lý nếu thiếu thông tin để giúp mô hình định tuyến chính xác. định nghĩa Tool Calling & Error Handling;  Bảo mật dữ liệu; Rò rỉ Meta-prompting; JSON Schema chưa rõ ràng
+- AI/công cụ đã dùng và cách kiểm tra: Đã sử dụng ChatGPT/Codex để phân tích prompt, xây dựng giả thuyết, đối chiếu evidence và chỉnh sửa hai artifact. Kết quả được kiểm tra bằng cách parse YAML, xác nhận đủ 9 tool, không trùng hoặc đổi tên tool, đồng thời rà soát lại cấu trúc JSON output và các quy tắc grounding trong system prompt.
+- Thời điểm đã tự nộp URL repo chung trên VLearn: 
 
