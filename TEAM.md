@@ -31,6 +31,14 @@
 
 Sao chép mục này cho từng thành viên.
 
+### Ngô Tuấn Tùng — 2A202602826
+
+- Phần việc và file/commit/PR: Team lead, Chạy 3 version và ghi logs, viết Report, adversarial cases `runs/v0_B_base_openrouter_20260915T184621977523.json`, `runs/v1_B_base_openai_20260915T204722114892.json`, `runs/v2_B_base_openai_20260915T205036318540.json`, `runs/v3_B_base_openai_20260915T205249160275.json`, file đã commit: TEAM.md, REPORT.md, version_log.csv.
+- Quyết định, khó khăn và cách xử lý: không có
+- Điều đã học: Chạy test, so sánh kết quả và so sánh các version. Các lỗi trong từng version và cách sửa.
+- AI/công cụ đã dùng và cách kiểm tra: Auto agent, tool yaml, vps .
+- Thời điểm đã tự nộp URL repo chung trên VLearn: 00:15, 16/09/2026.
+
 ### Phùng Đình Triển — 2A202602837
 
 - Phần việc và file/commit/PR: Viết 10 test case độc lập để kiểm tra và đối chiếu kết quả của agent; cập nhật phần reflection trong `TEAM.md`.
@@ -38,5 +46,28 @@ Sao chép mục này cho từng thành viên.
 - Điều đã học: Biết cách xây dựng test case, kiểm tra output và đánh giá lỗi của agent.
 - AI/công cụ đã dùng và cách kiểm tra: Sử dụng AI hỗ trợ xây dựng test case; chạy test và đối chiếu kết quả/log để kiểm tra.
 - Thời điểm đã tự nộp URL repo chung trên VLearn: 15/09/2026, khoảng 23:35.
+
+
+### Cao Đức Hiệp — 2A202602550
+
+- Phần việc và file/commit/PR: Tạo UI chat cho chatbot bằng Streamlit; chỉnh sửa `starter_v0/app.py`, kết nối luồng xử lý trong `starter_v0/chat.py`. Đảm bảo UI dễ nhìn, UX tốt, hiện các phần sau trong khi sử dungh UI chat:
+Trạng thái xử lý: đang suy nghĩ, đang gọi công cụ hoặc lỗi.
+Kết quả các tool đã sử dụng: tên tool, input, output và trạng thái thành công/thất bại.
+Thông tin phiên chat: provider, model, phiên bản app.
+Nút xóa lịch sử và các câu hỏi gợi ý nhanh.
+Transcript hoặc tóm tắt cuộc hội thoại để kiểm tra lại
+
+- Quyết định, khó khăn và cách xử lý: Chọn giao diện đơn giản, dễ sử dụng; kiểm tra và điều chỉnh hiển thị tin nhắn, trạng thái phản hồi.
+- Điều đã học: Biết cách xây dựng UI chat và kết nối giao diện với luồng xử lý của chatbot.
+- AI/công cụ đã dùng và cách kiểm tra: Streamlit, VS Code và AI hỗ trợ; chạy ứng dụng, gửi tin nhắn thử và kiểm tra kết quả hiển thị.
+- Thời điểm đã tự nộp URL repo chung trên VLearn: 16/09/2026, 01:15 .
+
+### Phạm Đình Bảo Khôi — 2A202602434
+
+- Phần việc và file/commit/PR: cải thiện system_prompt.md và tools.yaml cho trợ lý IT Service Desk bằng cách bổ sung quy tắc sử dụng công cụ, taxonomy cho intent/action, cơ chế xác nhận, xử lý lỗi và các ràng buộc đầu vào. Hai file đã được cập nhật trực tiếp; đã tạo commit.
+- Quyết định, khó khăn và cách xử lý: chưa biết cách đọc repo, đọc xong vẫn thấy mơ hồ, chưa hiểu repo muốn làm gì và chia việc cho thành viên nhóm như nào; các đầu việc có ảnh hưởng đến nhau ko, hay làm độc lập được. Để chạy được 30 câu hỏi tốn nhiều token, phải thay nhiều providers. 
+- Điều đã học: mô tả tool cần nêu rõ khi nào nên dùng, khi nào không nên dùng và cách xử lý nếu thiếu thông tin để giúp mô hình định tuyến chính xác. định nghĩa Tool Calling & Error Handling;  Bảo mật dữ liệu; Rò rỉ Meta-prompting; JSON Schema chưa rõ ràng
+- AI/công cụ đã dùng và cách kiểm tra: Đã sử dụng ChatGPT/Codex để phân tích prompt, xây dựng giả thuyết, đối chiếu evidence và chỉnh sửa hai artifact. Kết quả được kiểm tra bằng cách parse YAML, xác nhận đủ 9 tool, không trùng hoặc đổi tên tool, đồng thời rà soát lại cấu trúc JSON output và các quy tắc grounding trong system prompt.
+- Thời điểm đã tự nộp URL repo chung trên VLearn: 9h21 SA , 16/09/2026
 
 
