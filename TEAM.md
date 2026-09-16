@@ -37,6 +37,6 @@ Sao chép mục này cho từng thành viên.
 - Quyết định, khó khăn và cách xử lý: Một số case có thể khiến agent trả lời chưa đúng ý, nên điều chỉnh câu hỏi cho rõ ràng và kiểm tra lại kết quả sau khi chạy.
 - Điều đã học: Biết cách xây dựng test case, kiểm tra output và đánh giá lỗi của agent.
 - AI/công cụ đã dùng và cách kiểm tra: Sử dụng AI hỗ trợ xây dựng test case; chạy test và đối chiếu kết quả/log để kiểm tra.
-- Thời điểm đã tự nộp URL repo chung trên VLearn: 15/09/2026, khoảng 23:30.
+- Thời điểm đã tự nộp URL repo chung trên VLearn: 15/09/2026, khoảng 23:35.
 
 
