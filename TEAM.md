@@ -49,11 +49,17 @@ Sao chép mục này cho từng thành viên.
 
 ### Cao Đức Hiệp — 2A202602550
 
-- Phần việc và file/commit/PR:
-- Quyết định, khó khăn và cách xử lý:
-- Điều đã học:
-- AI/công cụ đã dùng và cách kiểm tra:
-- Thời điểm đã tự nộp URL repo chung trên VLearn:
+- Phần việc và file/commit/PR: Tạo UI chat cho chatbot bằng Streamlit; chỉnh sửa `starter_v0/app.py`, kết nối luồng xử lý trong `starter_v0/chat.py`. Đảm bảo UI dễ nhìn, UX tốt, hiện các phần sau trong khi sử dungh UI chat:
+Trạng thái xử lý: đang suy nghĩ, đang gọi công cụ hoặc lỗi.
+Kết quả các tool đã sử dụng: tên tool, input, output và trạng thái thành công/thất bại.
+Thông tin phiên chat: provider, model, phiên bản app.
+Nút xóa lịch sử và các câu hỏi gợi ý nhanh.
+Transcript hoặc tóm tắt cuộc hội thoại để kiểm tra lại
+
+- Quyết định, khó khăn và cách xử lý: Chọn giao diện đơn giản, dễ sử dụng; kiểm tra và điều chỉnh hiển thị tin nhắn, trạng thái phản hồi.
+- Điều đã học: Biết cách xây dựng UI chat và kết nối giao diện với luồng xử lý của chatbot.
+- AI/công cụ đã dùng và cách kiểm tra: Streamlit, VS Code và AI hỗ trợ; chạy ứng dụng, gửi tin nhắn thử và kiểm tra kết quả hiển thị.
+- Thời điểm đã tự nộp URL repo chung trên VLearn: 16/09/2026, 01:15 .
 
 ### Phạm Đình Bảo Khôi — 2A202602434
 
